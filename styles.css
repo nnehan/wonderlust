@@ -403,6 +403,18 @@ small {
     color: var(--soft-white);
     font-size: .75em;
 }
+
+.sr-only {
+    background: var(--sunset-orange);
+    height: 1rem;
+    padding: 1.5rem;
+    position: absolute;
+    transform: translateX(-250%);
+    transition: transform 0.3s;
+}
+.sr-only:focus {
+    transform: translateX(0%);
+}
 /* ----------------- GLOBAL STYLES (MEDIUM) -----------------*/
 @media screen and (min-width: 920px){
     h1 {
